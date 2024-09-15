@@ -1,0 +1,103 @@
+:root {
+    --wtc-blue: #0049FF;
+    --wtc-white: #ffff;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+
+body {
+    height:  100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+   
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+
+
+main .initial {
+    display: flex;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 1em;
+    background-color: var(--wtc-blue);
+    transition: all ease 1000ms;
+}
+
+main .initial p, main .initial h1 {
+    color: var(--wtc-white);
+}
+
+main .initial button {
+    color: var(--wtc-blue);
+}
+
+main .about {
+    display: none;
+    /* display: flex; */
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 1em;
+    /* visibility: hidden; */
+    color: var(--wtc-blue);
+    opacity: 0;
+    transition: all ease 1000ms;
+    background-color: var(--wtc-white);
+}
+
+
+main .about button {
+ background-color: var(--wtc-blue);
+ color: var(--wtc-white);
+ display: flex;
+ gap: .4em;
+ align-items: center;
+ justify-content: center;
+}
+main .about #return {
+ background-color: var(--wtc-white);
+ border: 2px solid var(--wtc-blue);
+ color: var(--wtc-white);
+}
+main img, header img {
+    max-width: 200px;
+}
+
+header {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    border-radius: 20px;
+    padding: 1em;
+}
