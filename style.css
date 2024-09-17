@@ -43,9 +43,10 @@ main .initial {
     flex-direction: column;
     align-items: center;
     gap: 2em;
-    padding: 4em 1em;
+    padding: 2em 1em;
     background-color: var(--wtc-blue);
     transition: all ease 1000ms;
+    position: relative;
 }
 
 main .initial p, main .initial h1 {
@@ -64,14 +65,15 @@ main .about {
     flex-direction: column;
     align-items: center;
     gap: 2em;
-    padding: 3em 1em;
+    padding: 1em;
     /* visibility: hidden; */
     color: var(--wtc-blue);
     opacity: 0;
     transition: all ease 1000ms;
     background-color: var(--wtc-white);
-    min-height: 70vh;
+    min-height: 60vh;
     justify-content: center;
+    position: relative;
 }
 
 
@@ -95,13 +97,7 @@ main .about #return {
 }
 
 #copyright {
-    max-width: 300px;
-}
-
-@media screen and (max-width:500px) {
-    #contientsGif {
-        width: 100%;
-    }    
+    max-width: 200px;
 }
 #byBlaBlaLab {
     max-width: 100px;
@@ -109,12 +105,26 @@ main .about #return {
     opacity: 0;
 }
 
-#wtcLogo {
-    max-width: 100%;
+#wtcLogo, #levels {
+    max-width: 500px;
 }
 
 #antartica {
- color: var(--wtc-light-blue);
+    color: var(--wtc-light-blue);
+}
+
+#howManyContinents {
+    font-size: 1.5em;
+}
+
+#returnSeta {
+    width: 50px;
+    height: 50px;
+}
+
+.icons {
+    width: 20px;
+    height: 20px;
 }
 header {
     padding: 1em;
@@ -130,4 +140,28 @@ button {
     border-radius: 20px;
     padding: 1em;
     cursor: pointer;
+}
+
+
+.rightsAnLanguage {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.languages {
+    display: flex;
+    gap: 1em;
+}
+@media screen and (max-width:500px) {
+    #continentsGif {
+        width: 100%;
+    }    
+
+    #howManyContinents {
+        font-size: 1em;
+    }
+    
 }
