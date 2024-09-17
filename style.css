@@ -15,6 +15,10 @@
 
 }
 
+a {
+    text-decoration: none;
+}
+
 
 body {
     height:  100vh;
@@ -40,10 +44,11 @@ main .initial {
     opacity: 1;
     width: 100%;
     height: 100%;
+    /* max-width: 1400px; */
     flex-direction: column;
     align-items: center;
     gap: 2em;
-    padding: 2em 1em;
+    /* padding: 2em 1em; */
     background-color: var(--wtc-blue);
     transition: all ease 1000ms;
     position: relative;
@@ -57,15 +62,24 @@ main .initial button {
     color: var(--wtc-blue);
 }
 
-main .about {
-    display: none;
-    /* display: flex; */
-    width: 100%;
+.container {
+   position: relative;
+    max-width: 1440px;
     height: 100%;
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2em;
     padding: 1em;
+}
+
+main .about {
+    display: none;
+    /* max-width: 1400px; */
+    /* display: flex; */
+    width: 100%;
+    height: 100%;
+   flex-direction: column;
     /* visibility: hidden; */
     color: var(--wtc-blue);
     opacity: 0;
@@ -73,7 +87,9 @@ main .about {
     background-color: var(--wtc-white);
     min-height: 60vh;
     justify-content: center;
-    position: relative;
+    align-items: center;
+    gap: 1em;
+    /* position: relative; */
 }
 
 
@@ -81,7 +97,7 @@ main .about button {
  background-color: var(--wtc-blue);
  color: var(--wtc-white);
  display: flex;
- gap: .4em;
+ gap: .2em;
  align-items: center;
  justify-content: center;
 }
@@ -106,15 +122,17 @@ main .about #return {
 }
 
 #wtcLogo, #levels {
-    max-width: 500px;
+    max-width: 400px;
 }
 
 #antartica {
     color: var(--wtc-light-blue);
+    font-size: .5em;
 }
 
 #howManyContinents {
     font-size: 1.5em;
+    max-width: 600px;
 }
 
 #returnSeta {
@@ -122,9 +140,19 @@ main .about #return {
     height: 50px;
 }
 
+#return {
+    padding: .3em;
+    border-radius: 50px;
+}
+
+#dottedArrow {
+    height: 50px;
+}
+
 .icons {
-    width: 20px;
+    /* width: 40px; */
     height: 20px;
+    object-fit: contain;
 }
 header {
     padding: 1em;
@@ -132,7 +160,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1em;
+    /* gap: .2em; */
 }
 
 button {
@@ -140,6 +168,9 @@ button {
     border-radius: 20px;
     padding: 1em;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -148,14 +179,43 @@ button {
     justify-content: space-between;
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
+    padding: 3em;
 }
 
 .languages {
     display: flex;
-    gap: 1em;
 }
 
+
+.languages button {
+    border-radius: 100%;
+    margin: .2em;
+    border: 2px solid var(--wtc-blue);
+}
+
+
+.whiteButtons {
+    border: 2px solid var(--wtc-white);
+}
+
+.whiteButtons:hover {
+background-color: transparent;
+border: 2px solid var(--wtc-white);
+color: var(--wtc-white);
+
+}
+
+.blueButtons {
+    border: 2px solid var(--wtc-blue);
+    
+}
+.blueButtons:hover {
+background-color: transparent;
+border: 2px solid var(--wtc-blue);
+color: var(--wtc-blue);
+
+}
 @media screen and (max-width:500px) {
     #continentsGif {
         width: 100%;
