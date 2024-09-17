@@ -34,7 +34,12 @@ function translateElements() {
         const translateLabel = element.dataset.translate || '';
 
         if(translateOptions[currentLanguage][translateLabel] != undefined) {
-            element.innerHTML = translateOptions[currentLanguage][translateLabel];
+            const curHtml = translateOptions[currentLanguage][translateLabel];
+            const iconElement = element?.querySelector('img') || element?.querySelector('svg');
+            const iconItem = iconElement ? iconElement.cloneNode(true) : null;
+            const iconContent = iconItem ? iconItem.outerHTML : '';
+
+            element.innerHTML = curHtml + iconContent;
         }
     });
 }
