@@ -155,6 +155,7 @@ button {
     display: flex;
     gap: 1em;
 }
+
 @media screen and (max-width:500px) {
     #continentsGif {
         width: 100%;
@@ -164,4 +165,13 @@ button {
         font-size: 1em;
     }
     
+}
+
+@media screen and (max-width:350px) {
+    .rightsAnLanguage {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
 }
