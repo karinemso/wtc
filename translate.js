@@ -5,7 +5,7 @@ const translateOptions = {
         howItWorks: `HOW DOES IT WORKS`,
         howManyContinents: `To receive this certification, you must have performed in at least 10% of the countries on each continent <br/> (America, Europe, Africa, Asia and Oceania)`,
         eachTour: `Each tour receive a label based on how many continents it has been to`,
-        antartica: `(ALTHOUGH ANTARTICA HAS ALREADY HOSTED SOME CONCERTS, IT DOES NOT COUNT IN THIS CERTIFICATION)`,
+        antartica: `(ALTHOUGH ANTARCTICA HAS ALREADY HOSTED SOME CONCERTS, IT DOES NOT COUNT IN THIS CERTIFICATION)`,
         analyzedTours: `SEE THE ANALIZED TOURS`,
         submitTour: `SUBMIT A TOUR`
     },
@@ -15,7 +15,7 @@ const translateOptions = {
         howItWorks: `COMO FUNCIONA`,
         howManyContinents: `Para receber essa certificação, você deve ter feito shows em, no mínimo, 10% dos países de cada continente (América, Europa, África, Ásia e Oceania).`,
         eachTour: `Cada turnê recebe um selo baseado em quantos continentes esteve.`,
-        antartica: `(Apesar de a Antártida já ter recebido alguns shows, não é um continente válido nessa análise)`,
+        antartica: `(APESAR DE A ANTÁRTIDA JÁ TER RECEBIDO ALGUNS SHOWS, NÃO É UM CONTINENTE VÁLIDO NESSA ANÁLISE)`,
         analyzedTours: `VER TURNÊS ANALISADAS`,
         submitTour: `ENVIE UMA TURNÊ`
     }

@@ -164,7 +164,7 @@ header {
 
 button {
     border: none;
-    border-radius: 20px;
+    border-radius: 100px;
     padding: 1em;
     cursor: pointer;
     display: flex;
@@ -239,5 +239,61 @@ button {
 
     .rightsAnLanguage .languages button {
         font-size: 12px;
+    }
+}
+
+@media screen and (max-height: 740px) {
+    .rightsAnLanguage {
+        position: initial;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-height: 820px) {
+    #continentsGif {
+        max-height: 35vh;
+    }
+
+    #wtcLogo, #levels {
+        max-height: 280px;
+    }
+
+    .rightsAnLanguage {
+        position: initial;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 767px) and (max-height: 740px) {
+    .container {
+        gap: 1.4em;
+    }
+
+    #continentsGif {
+        max-height: 30vh;
+    }
+
+    #dottedArrow {
+        height: 30px;
+    }
+
+    header {
+        padding: .2em;
+    }
+
+    main .initial h1 {
+        font-size: 24px;
+    }
+
+    main .initial p {
+        font-size: 14px;
+    }
+
+    main .about button {
+        font-size: 12px;
+    }
+
+    #wtcLogo, #levels {
+        max-height: 220px;
     }
 }
