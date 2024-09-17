@@ -12,12 +12,12 @@ const translateOptions = {
     pt: {
         notAWorld: `ISSO NÃO É UMA <br/>"TURNÊ MUNDIAL"`,
         whatItIs: `Se algum continente fica de fora, esse termo está sendo usado de forma errada. Nós analisamos e certificamos turnês mundiais de verdade.`,
-        howItWorks: `HOW IT WORKS`,
+        howItWorks: `COMO FUNCIONA`,
         howManyContinents: `Para receber essa certificação, você deve ter feito shows em, no mínimo, 10% dos países de cada continente (América, Europa, África, Ásia e Oceania).`,
         eachTour: `Cada turnê recebe um selo baseado em quantos continentes esteve.`,
         antartica: `(Apesar de a Antártida já ter recebido alguns shows, não é um continente válido nessa análise)`,
-        analyzedTours: `Ver turnês analisadas`,
-        submitTour: `Envie uma turnê` 
+        analyzedTours: `VER TURNÊS ANALISADAS`,
+        submitTour: `ENVIE UMA TURNÊ`
     }
 }
 
@@ -26,9 +26,7 @@ function getCurrentLanguage() {
     return !storageLanguage ? 'en' : storageLanguage;
 }
 
-function handleClickToggleLanguage({ currentTarget }) {
-    localStorage.setItem('language',currentTarget.dataset.language || 'en');
-
+function translateElements() {
     const currentLanguage = getCurrentLanguage();
 
     const elementsToTranslate = document.querySelectorAll('[data-translate]');
@@ -41,8 +39,15 @@ function handleClickToggleLanguage({ currentTarget }) {
     });
 }
 
+function handleClickToggleLanguage({ currentTarget }) {
+    localStorage.setItem('language',currentTarget.dataset.language || 'en');
+    translateElements();
+}
+
 window.addEventListener('DOMContentLoaded',() => {
     const langBtns = document.querySelectorAll('.languages button');
+
+    translateElements();
 
     langBtns.forEach(btn => {
         btn.addEventListener('click',handleClickToggleLanguage);
