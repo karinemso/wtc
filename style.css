@@ -1,6 +1,7 @@
 :root {
     --wtc-blue: #0049FF;
     --wtc-white: #ffff;
+    --wtc-light-blue : #A4B8D8;
 
 }
 
@@ -42,7 +43,7 @@ main .initial {
     flex-direction: column;
     align-items: center;
     gap: 2em;
-    padding: 1em;
+    padding: 4em 1em;
     background-color: var(--wtc-blue);
     transition: all ease 1000ms;
 }
@@ -63,12 +64,14 @@ main .about {
     flex-direction: column;
     align-items: center;
     gap: 2em;
-    padding: 1em;
+    padding: 3em 1em;
     /* visibility: hidden; */
     color: var(--wtc-blue);
     opacity: 0;
     transition: all ease 1000ms;
     background-color: var(--wtc-white);
+    min-height: 70vh;
+    justify-content: center;
 }
 
 
@@ -85,19 +88,46 @@ main .about #return {
  border: 2px solid var(--wtc-blue);
  color: var(--wtc-white);
 }
-main img, header img {
-    max-width: 200px;
+#continentsGif {
+    /* max-width: 200px; */
+    max-width: 90%;
+    max-height: 40vh;
 }
 
+#copyright {
+    max-width: 300px;
+}
+
+@media screen and (max-width:500px) {
+    #contientsGif {
+        width: 100%;
+    }    
+}
+#byBlaBlaLab {
+    max-width: 100px;
+    display: none;
+    opacity: 0;
+}
+
+#wtcLogo {
+    max-width: 100%;
+}
+
+#antartica {
+ color: var(--wtc-light-blue);
+}
 header {
     padding: 1em;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 1em;
 }
 
 button {
     border: none;
     border-radius: 20px;
     padding: 1em;
+    cursor: pointer;
 }
