@@ -13,7 +13,7 @@ const translateOptions = {
         notAWorld: `ISSO NÃO É UMA <br/>"TURNÊ MUNDIAL"`,
         whatItIs: `Se algum continente fica de fora, esse termo está sendo usado de forma errada. Nós analisamos e certificamos turnês mundiais de verdade.`,
         howItWorks: `COMO FUNCIONA`,
-        howManyContinents: `Para receber essa certificação, você deve ter feito shows em, no mínimo, <br class="broke-about"> 10% dos países de cada continente (América, Europa, África, Ásia e Oceania).`,
+        howManyContinents: `Para receber essa certificação, você deve ter feito shows em, no mínimo, 10% dos países de cada continente (América, Europa, África, Ásia e Oceania).`,
         eachTour: `Cada turnê recebe um selo baseado em quantos continentes esteve.`,
         antartica: `(APESAR DE A ANTÁRTIDA JÁ TER RECEBIDO ALGUNS SHOWS, NÃO É UM CONTINENTE VÁLIDO NESSA ANÁLISE)`,
         analyzedTours: `VER TURNÊS ANALISADAS`,
