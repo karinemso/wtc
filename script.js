@@ -9,9 +9,8 @@ function goTo(from){
     const currentPage = from == 'initial'? initial : about
     const nextPage = from == 'initial'? about : initial
 
-    
     currentPage.style.opacity = '0'
-    console.log('oi')
+
     setTimeout(() => {
         
         if(from == 'initial'){

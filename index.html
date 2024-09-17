@@ -26,20 +26,17 @@
 
                 <img src="assets/continents.gif" alt="" id="continentsGif">
                 <img src="assets/WTC_SetaPontinhos.svg" alt="" id="dottedArrow">
-                <h1 id="notAWorld">THIS IS NOT A <br/>"WORLD TOUR"</h1>
-                <p id="whatItIs">If it's excluding a continent thist term is being used incorrectly. We analyze and certify real world tours.</p>
-                <button id="howItWorks"  class="whiteButtons">HOW DOES IT WORKS</button>
+                <h1 id="notAWorld" data-translate="notAWorld">THIS IS NOT A <br/>"WORLD TOUR"</h1>
+                <p id="whatItIs" data-translate="whatItIs">If it's excluding a continent thist term is being used incorrectly. We analyze and certify real world tours.</p>
+                <button id="howItWorks" data-translate="howItWorks" class="whiteButtons">HOW DOES IT WORKS</button>
                 <div class="rightsAnLanguage">
-        
                     <img  id="copyright" src="assets/WTC_Copyright.svg" alt="">
             
-            
                     <div class="languages">
-                        <button class="whiteButtons">PT</button>
-                        <button class="whiteButtons">EN</button>
+                        <button class="whiteButtons" data-language="pt">PT</button>
+                        <button class="whiteButtons" data-language="en">EN</button>
                     </div>
-
-            </div>
+                </div>
             </div>
 
         </div>
@@ -50,15 +47,15 @@
             <div class="container">
 
 
-                <p id="howManyContinents">To receive this certification, you must have performed in at least 10% of the countries on each continent <br/>  (America, Europe, Africa, Asia and Oceania)</p>
-                <p id="eachTour">Each tour receive a label based on how many continents it has been to</p>
+                <p id="howManyContinents" data-translate="howManyContinents">To receive this certification, you must have performed in at least 10% of the countries on each continent <br/>  (America, Europe, Africa, Asia and Oceania)</p>
+                <p id="eachTour" data-translate="eachTour">Each tour receive a label based on how many continents it has been to</p>
                 <img id="levels" src="assets/WTC_Selos.svg" alt="">
     
-                <h6 id="antartica">(ALTHOUGH ANTARTICA HAS ALREADY HOSTED SOME CONCERTS, IT DOES NOT COUNT IN THIS CERTIFICATION)</h6>
+                <h6 id="antartica" data-translate="antartica">(ALTHOUGH ANTARTICA HAS ALREADY HOSTED SOME CONCERTS, IT DOES NOT COUNT IN THIS CERTIFICATION)</h6>
                 
                 
                 <a href="https://www.instagram.com/blablalab.wtf/" target="_blank">
-                    <button type="button" id="analyzedTours" >
+                    <button type="button" id="analyzedTours" data-translate="analyzedTours">
                         SEE THE ANALIZED TOURS
                          <img class="icons" src="assets/WTC_InstaIcon.svg" alt="">
                      </button>
@@ -66,7 +63,7 @@
                     
                 <a href="mailTo:karinemsoliveira@gmail.com">
 
-                    <button id="submitTour" >SUBMIT A TOUR <img class="icons" src="assets/WTC_EmailIcon.svg" alt=""></button>
+                    <button id="submitTour" data-translate="submitTour">SUBMIT A TOUR <img class="icons" src="assets/WTC_EmailIcon.svg" alt=""></button>
 
                 </a>
                 <button id="return"><img id="returnSeta"  src="assets/WTC_SetaRetorno.svg" alt=""></button>
@@ -76,8 +73,8 @@
             
             
                     <div class="languages">
-                        <button class="blueButtons">PT</button>
-                        <button  class="blueButtons">EN</button>
+                        <button class="blueButtons" data-language="pt">PT</button>
+                        <button class="blueButtons" data-language="en">EN</button>
                     </div>
                 </div>
 
@@ -87,5 +84,6 @@
     </main>
 
     <script src="script.js"></script>
+    <script src="translate.js"></script>
 </body>
 </html>

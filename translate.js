@@ -2,7 +2,7 @@ const translateOptions = {
     en: {
         notAWorld: `THIS IS NOT A <br/>"WORLD TOUR"`,
         whatItIs: `If it's excluding a continent thist term is being used incorrectly. We analyze and certify real world tours.`,
-        howItWorks: `HOW IT WORKS`,
+        howItWorks: `HOW DOES IT WORKS`,
         howManyContinents: `To receive this certification, you must have performed in at least 10% of the countries on each continent <br/> (America, Europe, Africa, Asia and Oceania)`,
         eachTour: `Each tour receive a label based on how many continents it has been to`,
         antartica: `(ALTHOUGH ANTARTICA HAS ALREADY HOSTED SOME CONCERTS, IT DOES NOT COUNT IN THIS CERTIFICATION)`,

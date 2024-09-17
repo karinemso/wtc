@@ -19,7 +19,6 @@ a {
     text-decoration: none;
 }
 
-
 body {
     height:  100vh;
     display: flex;
@@ -27,9 +26,6 @@ body {
 }
 
 main {
-   
-
-
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -37,7 +33,6 @@ main {
     text-align: center;
     flex: 1;
 }
-
 
 main .initial {
     display: flex;
@@ -79,7 +74,7 @@ main .about {
     /* display: flex; */
     width: 100%;
     height: 100%;
-   flex-direction: column;
+    flex-direction: column;
     /* visibility: hidden; */
     color: var(--wtc-blue);
     opacity: 0;
@@ -94,18 +89,20 @@ main .about {
 
 
 main .about button {
- background-color: var(--wtc-blue);
- color: var(--wtc-white);
- display: flex;
- gap: .2em;
- align-items: center;
- justify-content: center;
+    background-color: var(--wtc-blue);
+    color: var(--wtc-white);
+    display: flex;
+    gap: .2em;
+    align-items: center;
+    justify-content: center;
 }
+
 main .about #return {
- background-color: var(--wtc-white);
- border: 2px solid var(--wtc-blue);
- color: var(--wtc-white);
+    background-color: var(--wtc-white);
+    border: 2px solid var(--wtc-blue);
+    color: var(--wtc-white);
 }
+
 #continentsGif {
     /* max-width: 200px; */
     max-width: 90%;
@@ -115,6 +112,7 @@ main .about #return {
 #copyright {
     max-width: 200px;
 }
+
 #byBlaBlaLab {
     max-width: 100px;
     display: none;
@@ -154,6 +152,7 @@ main .about #return {
     height: 20px;
     object-fit: contain;
 }
+
 header {
     padding: 1em;
     display: flex;
@@ -173,7 +172,6 @@ button {
     justify-content: center;
 }
 
-
 .rightsAnLanguage {
     display: flex;
     justify-content: space-between;
@@ -187,35 +185,34 @@ button {
     display: flex;
 }
 
-
 .languages button {
     border-radius: 100%;
     margin: .2em;
     border: 2px solid var(--wtc-blue);
 }
 
-
 .whiteButtons {
     border: 2px solid var(--wtc-white);
+    z-index: 999;
 }
 
 .whiteButtons:hover {
-background-color: transparent;
-border: 2px solid var(--wtc-white);
-color: var(--wtc-white);
-
+    background-color: transparent;
+    border: 2px solid var(--wtc-white);
+    color: var(--wtc-white);
 }
 
 .blueButtons {
     border: 2px solid var(--wtc-blue);
     
 }
-.blueButtons:hover {
-background-color: transparent;
-border: 2px solid var(--wtc-blue);
-color: var(--wtc-blue);
 
+.blueButtons:hover {
+    background-color: transparent;
+    border: 2px solid var(--wtc-blue);
+    color: var(--wtc-blue);
 }
+
 @media screen and (max-width:500px) {
     #continentsGif {
         width: 100%;
