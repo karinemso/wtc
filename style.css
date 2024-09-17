@@ -125,7 +125,7 @@ main .about #return {
 
 #antartica {
     color: var(--wtc-light-blue);
-    font-size: .5em;
+    font-size: .6em;
 }
 
 #howManyContinents {
@@ -213,6 +213,10 @@ button {
     color: var(--wtc-blue);
 }
 
+.broke-about {
+    display: none;
+}
+
 @media screen and (max-width:500px) {
     #continentsGif {
         width: 100%;
@@ -221,7 +225,16 @@ button {
     #howManyContinents {
         font-size: 1em;
     }
-    
+
+    .broke-about {
+        display: initial;
+    }
+}
+
+@media screen and (max-width:415px) {
+    .broke-about {
+        display: none;
+    }
 }
 
 @media screen and (max-width:350px) {
