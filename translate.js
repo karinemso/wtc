@@ -6,7 +6,7 @@ const translateOptions = {
         howManyContinents: `To receive this certification, you must have performed in <br class="broke-about"> at least 10% of the countries on each continent <br/> (America, Europe, Africa, Asia and Oceania)`,
         eachTour: `Each tour receive a label based on how many continents it has been to`,
         antartica: `(ALTHOUGH ANTARCTICA HAS ALREADY HOSTED SOME CONCERTS, IT DOES NOT COUNT IN THIS CERTIFICATION)`,
-        analyzedTours: `SEE THE ANALIZED TOURS`,
+        analyzedTours: `SEE THE ANALYZED TOURS`,
         submitTour: `SUBMIT A TOUR`
     },
     pt: {
